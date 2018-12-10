@@ -9,7 +9,7 @@ directory_dict = './dict/directory.lst'
 directory_common_dict = './dict/directory_common.lst'
 filename_dict = './dict/filename.lst'
 package_ext_dict = './dict/package_ext.lst'
-tempfile_ext_dict = './dict/tmpfile_ext.lst'
+tempfile_pattern_dict = './dict/tmpfile_pattern.lst'
 
 # 扫描域名策略
 # 1 = 和域名全称相关: 包含 job.wooyun.org

@@ -18,6 +18,9 @@
 
 更多使用详情参照 [/config.py](https://github.com/ring04h/weakfilescan/blob/master/config.py)
 
+> Fork 修改如下：
+1. 修改临时文件的规则集，原先的直接将临时文件后缀拼接到文件名后面，这会导致vim产生的`.index.php.swo`等文件无法加入到规则集，因为前面有个点。现改为利用类似`.%ORI%.swo`的pattern方式来生成临时文件规则集，这个做法相比之前更普适。
+
 # 快速开始
 ``` shell
 python wyspider.py http://wuyun.org php

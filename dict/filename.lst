@@ -6,6 +6,7 @@
 .svn/entries
 .git/config
 .DS_Store
+.htaccess
 activity.%EXT%
 add.%EXT%
 admin.html
@@ -119,6 +120,14 @@ wiki.%EXT%
 ws.%EXT%
 wx.%EXT%
 xmlrpc.%EXT%
+phpinfo.php
+test.%EXT%
+flag.%EXT%
+fl4g.%EXT%
+shell.%EXT%
+.bash_history
+.viminfo
+_viminfo
 database.inc
 common.inc
 db.inc

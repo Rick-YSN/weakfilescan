@@ -28,10 +28,12 @@ def start_wyspider(siteurl): # 启动爬虫和fuzz类
 
 	# 初始化字典
 	fuzz_bak = ProcessDic(package_ext_dict).parser()
-	fuzz_tmp = ProcessDic(tempfile_ext_dict).parser()
+	fuzz_tmp = ProcessDic(tempfile_pattern_dict).parser()
 
 	bak_ext_re = '|'.join(fuzz_bak).replace('.', '\.') # 生成常见备份文件规则
+
 	fuzz_filename_replace = {'%EXT%':default_extion,'%BAK_EXT%':bak_ext_re}
+
 	fuzz_filename = ProcessDic(filename_dict,fuzz_filename_replace).parser()
 
 	fuzz_webdirs = ProcessDic(directory_dict).parser()
